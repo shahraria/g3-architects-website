@@ -1,0 +1,97 @@
+/* Work Sense Font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Shared Styles */
+.btn-primary {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: 0;
+    cursor: pointer;
+}
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    align-self: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a {
+    color: #424242;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* Banner Styles */
+.banner-container {
+    max-width: 862px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+    font-weight: 400;
+}
+.banner img{
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+/* Responsive Media Quarey */
+/* Mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* Tablets or Others devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
