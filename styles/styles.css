@@ -62,6 +62,7 @@ nav li a {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .banner-description {
@@ -82,6 +83,7 @@ main {
     margin: 0 auto;
 }
 
+/* Teams section Start */
 .team {
     display: flex;
     align-items: center;
@@ -91,7 +93,7 @@ main {
 .Teams-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 1.4rem;
 }
 
 .teams-content {
@@ -109,14 +111,139 @@ main {
     color: #131313;
     font-weight: 700;
 }
-.Features{
+
+.Featurest {
     color: #FF900E;
     font-weight: 700;
 }
-.teams-descripition{
+
+.teams-descripition {
     color: #727272;
     font-weight: 400;
+    margin-bottom: 32px;
 }
+
+/* Teams Section end */
+
+/* About Myself Start */
+.Features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+    align-items: center;
+}
+
+.about-div {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.about-title {
+    color: #131313;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.about-description {
+    color: #727272;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.about-my-pic img{
+    height: 90%;
+    margin-left: 80px;
+}
+
+.ten-year-experience {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    padding: 40px;
+    width: 342px;
+    position: relative;
+    bottom: 100px;
+}
+.ten-year-experience h4{
+    font-size: 4.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Some Facts Start */
+
+.Facts {
+    margin-top: 150px;
+}
+
+.Facts-description {
+    color: #727272;
+    font-weight: 400;
+    margin-top: -30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px 45px;
+}
+
+.card-title {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.card-description {
+    color: #727272;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 5px auto;
+}
+
+/* some facts end */
+
+/* Sponser section start */
+.sponspors {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.sponspors-img-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Sponser section end */
+
+
+.footer-title {
+    color: #424242;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 40px;
+    margin-top: 130px;
+}
+
+
 
 
 /* Responsive Media Quarey */
@@ -126,8 +253,29 @@ main {
         padding: 10px;
     }
 
-    nav {
+    nav, .team, .card-container, .sponspors-img-section, .Features {
         flex-direction: column;
+    }
+
+    .Teams-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding: 0px 10px;
+    }
+
+    .card-container {
+        margin: 5px 5px;
+        row-gap: 7px;
+    }
+    .about-my-pic img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .ten-year-experience{
+        width: 75%;
+        margin-bottom: 10px;
     }
 }
 
@@ -137,7 +285,19 @@ main {
         padding: 10px;
     }
 
-    nav {
+    nav, .team, .card-container, .Features {
         flex-direction: column;
+    }
+
+    .card-container {
+        margin: 5px 5px;
+        row-gap: 8px;
+    }
+
+    .sponspors-img-section {
+        flex-wrap: wrap;
+    }
+    .ten-year-experience{
+        margin-bottom: 10px;
     }
 }
